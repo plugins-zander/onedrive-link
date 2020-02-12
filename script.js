@@ -213,9 +213,9 @@ window.onload = function() //网页加载初始化
 	var localarr = GM_listValues();
 	if (localarr.indexOf("godl-masks")<0) //没有掩码数据，初始化默认配置。
 	{
-		addNewMask("普通外链","http://storage.live.com/items/%{file.id}:/%{file.name}");
-		addNewMask("最短链接","http://storage.live.com/items/%{file.id}");
-		addNewMask("UBB代码外链图片","[img]http://storage.live.com/items/%{file.id}:/%{file.name}[/img]");
+		addNewMask("普通外链","https://storage.live.com/items/%{file.id}:/%{file.name}");
+		addNewMask("最短链接","https://storage.live.com/items/%{file.id}");
+		addNewMask("UBB代码外链图片","[img]https://storage.live.com/items/%{file.id}:/%{file.name}[/img]");
 		addNewMask("掩码使用示例","在OneDrive里查看 %{file.name} 的地址是：%{file.webUrl}");
 		addNewMask("掩码高级使用示例","%{index+1}号文件的尺寸是：%{file.size>1024?parseInt(file.size/1024)+\"KB\":file.size+\"B\"}");
 	}
